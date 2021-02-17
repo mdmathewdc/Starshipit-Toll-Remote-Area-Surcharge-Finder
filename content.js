@@ -1,4 +1,12 @@
-console.log("Content script working");
+setInterval(function() {
+console.log("Content script looping...");
 
-var orderNumber = document.getElementById('ctl00_ContentPlaceHolder1_RadGrid_Orders_ctl00_ctl05_hl_id').innerHTML;
-console.log("The order number is : "+ orderNumber);
+var pinCode = document.getElementById('ctl00_NewOrderControlModal_ContactEdit_Destination_RadComboBox_PostCode_Input').value;
+
+
+if (pinCode != "") {
+
+    console.log("The pin-code is : "+ pinCode);
+
+}
+},2000);
