@@ -1,9 +1,13 @@
+        //localStorage.setItem('alerted', item.Pincode);
+
 chrome.runtime.onMessage.addListener(
+
     function(request, sender, sendResponse) {
-        
-      console.log(sender.tab ?
-                  "from a content script:" + sender.tab.url :
-                  "from the extension");
+        localStorage.setItem('alerted', item.Pincode);
+
+      //console.log(sender.tab ?
+        //          "from a content script:" + sender.tab.url :
+         //         "from the extension");
       if (request.greeting != alerted)
       {
           localStorage.setItem('alerted', greeting)
@@ -18,4 +22,4 @@ chrome.runtime.onMessage.addListener(
 
 
     }
-  );
+  );  
