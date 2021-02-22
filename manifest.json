@@ -1,6 +1,6 @@
 {
   "name": "BeerCo-Toll RA Surcharge Finder",
-  "version": "1.0",
+  "version": "1.1",
   "description": "A Chrome extension for finding the surcharge for Toll remote areas by retrieving data from StarShipIt",
   "permissions": ["declarativeContent","storage","notifications"],
   "background": {
