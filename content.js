@@ -32,7 +32,6 @@ if (pinCode != "") {
         json.forEach((item) => {
             if ((item.Pincode == pinCode) && ((item.Name.toUpperCase() == suburb) || (item.Name.toUpperCase() == city)))
             {
-                console.log("GReat success!");
                 var alerted = localStorage.getItem('alerted') || '';
                 console.log("ALERTED: "+ alerted);
                 alert("Toll RA surcharge! Suburb: " + item.Name + " | Cost: $" +item.Cost);
@@ -59,7 +58,6 @@ if (pinCode != "") {
         json.forEach((item) => {
             if ((item.Pincode == pinCode) && ((item.Name.toUpperCase() == suburb) || (item.Name.toUpperCase() == city)))
             {
-                console.log("GReat success!");
                 var alerted = localStorage.getItem('alerted') || '';
                 console.log("ALERTED: "+ alerted);
                 if (alerted != item.Pincode) {
